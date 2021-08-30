@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "martian_alloys:obsidiamond_raw"
+    },
+    "result": "martian_alloys:obsidiamond",
+    "experience": 0.2,
+    "cookingtime": 200
+}

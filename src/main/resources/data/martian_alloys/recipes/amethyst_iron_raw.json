@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{ "item": "minecraft:iron_ingot" },
+		{ "item": "minecraft:amethyst_shard" }
+	],
+	"result": {
+		"item": "martian_alloys:amethyst_iron_raw",
+		"count": 1
+	}
+}

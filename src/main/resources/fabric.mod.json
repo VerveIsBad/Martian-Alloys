@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "martian_alloys",
+  "version": "${version}",
+
+  "name": "Martian Alloys",
+  "description": "Martian Allows adds many new alloys from many existing materials.",
+  "authors": [
+    "PaytonTheMartian"
+  ],
+  "contact": {
+    "homepage": "https://paytonthemartian.github.io/showcase/martian-alloys.html",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/martian_alloys/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "paytonthemartian.martian_alloys.MartianAlloysMod"
+    ]
+  },
+  "mixins": [
+    "martian_alloys.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {}
+}

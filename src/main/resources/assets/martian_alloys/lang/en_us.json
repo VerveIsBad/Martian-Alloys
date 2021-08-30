@@ -1,0 +1,19 @@
+{
+	"item.martian_alloys.amethyst_iron": "Amethyst Iron",
+	"item.martian_alloys.amethyst_iron_raw": "Raw Amethyst Iron",
+	"item.martian_alloys.amethyst_iron_bucket": "Molten Amethyst Iron Bucket",
+	"item.martian_alloys.amethyst_iron_sword": "Amethyst Iron Sword",
+	"item.martian_alloys.amethyst_iron_pickaxe": "Amethyst Iron Pickaxe",
+	"item.martian_alloys.amethyst_iron_axe": "Amethyst Iron Axe",
+	"item.martian_alloys.amethyst_iron_shovel": "Amethyst Iron Shovel",
+	"item.martian_alloys.amethyst_iron_hoe": "Amethyst Iron Hoe",
+
+	"item.martian_alloys.obsidiamond": "Obsidiamond",
+	"item.martian_alloys.obsidiamond_raw": "Raw Obsidiamond",
+	"item.martian_alloys.obsidiamond_bucket": "Molten Obsidiamond Bucket",
+	"item.martian_alloys.obsidiamond_sword": "Obsidiamond Sword",
+	"item.martian_alloys.obsidiamond_pickaxe": "Obsidiamond Pickaxe",
+	"item.martian_alloys.obsidiamond_axe": "Obsidiamond Axe",
+	"item.martian_alloys.obsidiamond_shovel": "Obsidiamond Shovel",
+	"item.martian_alloys.obsidiamond_hoe": "Obsidiamond Hoe"
+}
