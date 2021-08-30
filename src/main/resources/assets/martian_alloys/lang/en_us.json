@@ -15,5 +15,8 @@
 	"item.martian_alloys.obsidiamond_pickaxe": "Obsidiamond Pickaxe",
 	"item.martian_alloys.obsidiamond_axe": "Obsidiamond Axe",
 	"item.martian_alloys.obsidiamond_shovel": "Obsidiamond Shovel",
-	"item.martian_alloys.obsidiamond_hoe": "Obsidiamond Hoe"
+	"item.martian_alloys.obsidiamond_hoe": "Obsidiamond Hoe",
+
+	"item.martian_alloys.rune_empty": "Empty Rune",
+	"item.martian_alloys.rune_flight": "Flight Rune"
 }
