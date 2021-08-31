@@ -40,5 +40,16 @@ public class RecipeManagerMixin {
 			map.put(new Identifier("martian_alloys", "obsidiamond_axe"), MartianAlloysMod.OBSIDIAMOND_ALLOY.axeRecipe);
 		if (MartianAlloysMod.OBSIDIAMOND_ALLOY.hoeRecipe != null)
 			map.put(new Identifier("martian_alloys", "obsidiamond_hoe"), MartianAlloysMod.OBSIDIAMOND_ALLOY.hoeRecipe);
+
+		if (MartianAlloysMod.ROSE_GOLD.swordRecipe != null)
+			map.put(new Identifier("martian_alloys", "rose_gold_sword"), MartianAlloysMod.ROSE_GOLD.swordRecipe);
+		if (MartianAlloysMod.OBSIDIAMOND_ALLOY.shovelRecipe != null)
+			map.put(new Identifier("martian_alloys", "rose_gold_shovel"), MartianAlloysMod.ROSE_GOLD.shovelRecipe);
+		if (MartianAlloysMod.ROSE_GOLD.pickaxeRecipe != null)
+			map.put(new Identifier("martian_alloys", "rose_gold_pickaxe"), MartianAlloysMod.ROSE_GOLD.pickaxeRecipe);
+		if (MartianAlloysMod.ROSE_GOLD.axeRecipe != null)
+			map.put(new Identifier("martian_alloys", "rose_gold_axe"), MartianAlloysMod.ROSE_GOLD.axeRecipe);
+		if (MartianAlloysMod.ROSE_GOLD.hoeRecipe != null)
+			map.put(new Identifier("martian_alloys", "rose_gold_hoe"), MartianAlloysMod.ROSE_GOLD.hoeRecipe);
 	}
 }

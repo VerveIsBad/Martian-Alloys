@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:generated",
+    "textures": {
+        "layer0": "item/rune_fire_aspect"
+    }
+}

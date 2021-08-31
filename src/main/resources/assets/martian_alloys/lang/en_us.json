@@ -17,6 +17,17 @@
 	"item.martian_alloys.obsidiamond_shovel": "Obsidiamond Shovel",
 	"item.martian_alloys.obsidiamond_hoe": "Obsidiamond Hoe",
 
+	"item.martian_alloys.rose_gold": "Rose Gold",
+	"item.martian_alloys.rose_gold_raw": "Raw Rose Gold",
+	"item.martian_alloys.rose_gold_bucket": "Molten Rose Gold Bucket",
+	"item.martian_alloys.rose_gold_sword": "Rose Gold Sword",
+	"item.martian_alloys.rose_gold_pickaxe": "Rose Gold Pickaxe",
+	"item.martian_alloys.rose_gold_axe": "Rose Gold Axe",
+	"item.martian_alloys.rose_gold_shovel": "Rose Gold Shovel",
+	"item.martian_alloys.rose_gold_hoe": "Rose Gold Hoe",
+
 	"item.martian_alloys.rune_empty": "Empty Rune",
-	"item.martian_alloys.rune_flight": "Flight Rune"
+	"item.martian_alloys.rune_sharpness": "Sharpness Rune",
+	"item.martian_alloys.rune_fire_aspect": "Fire Aspect Rune",
+	"item.martian_alloys.rune_efficiency": "Efficiency Rune"
 }
