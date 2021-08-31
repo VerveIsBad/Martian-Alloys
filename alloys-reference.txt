@@ -1,0 +1,24 @@
+Rose Gold:
+	- Jewelry
+	- 18K Red Gold: 75% gold, 25% copper
+	- 18K Rose Gold: 75% gold, 22.25% copper, 2.75% silver
+	- 18K Pink Gold: 75% gold, 20% copper, 5% silver
+	- 12K Red Gold: 50% gold, 50% silver
+
+White Gold:
+	- Jewelry
+	- 75% gold, 25% nickel or zinc
+
+Steel:
+	- Building, infrastructure, tools, ships, trains, cars, machines, electrical appliances, and weapons
+	- 95%+ iron, 0.5%>= carbon
+	- (Stainless) 84%+ iron, 0.5%>= carbon, 11% chromium
+
+Bronze:
+	- Sculptures, mirrors, musical instruments, and coins and medals
+	- https://en.wikipedia.org/wiki/Bronze#Mirrors
+	- 87.5-88% copper, 12-12.5% tin
+
+Pewter:
+	- Low melting point, used for decor.
+	- 85-99% tin, 5%-10% antimony, 2% copper, bismuth, and sometimes silver.

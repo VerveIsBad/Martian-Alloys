@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{ "item": "minecraft:gold_ingot" },
+		{ "item": "minecraft:gold_ingot" },
+		{ "item": "minecraft:gold_ingot" },
+		{ "item": "minecraft:copper_ingot" }
+	],
+	"result": {
+		"item": "martian_alloys:rose_gold_raw",
+		"count": 4
+	}
+}

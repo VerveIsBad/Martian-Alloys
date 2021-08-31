@@ -15,7 +15,12 @@ public class ModelLoaderMixin {
     @Inject(method = "loadModelFromJson", at = @At(value = "INVOKE", target = "Lnet/minecraft/resource/ResourceManager;getResource(Lnet/minecraft/util/Identifier;)Lnet/minecraft/resource/Resource;"), cancellable = true)
     public void loadModelFromJson(Identifier id, CallbackInfoReturnable<JsonUnbakedModel> cir) {
         if (!"martian_alloys".equals(id.getNamespace())) return;
-        String modelJson = Alloy.createItemModel(id.toString(), "generated");
+        String modelJson = "";
+        if (id.getPath().contains("sword") || id.getPath().contains("pickaxe") || id.getPath().contains("axe") || id.getPath().contains("shovel") || id.getPath().contains("hoe")) {
+            modelJson = Alloy.createItemModel(id.toString(), "handheld");
+        } else {
+            modelJson = Alloy.createItemModel(id.toString(), "generated");
+        }
         if ("".equals(modelJson)) return;
         JsonUnbakedModel model = JsonUnbakedModel.deserialize(modelJson);
         model.id = id.toString();
