@@ -19,8 +19,8 @@ public class MartianAlloysMod implements ModInitializer {
 	public void onInitialize() {
 		Alloy.registerAlloy(AMETHYST_IRON_ALLOY);
 		Alloy.registerAlloy(OBSIDIAMOND_ALLOY);
-		
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "empty_rune"), RUNE_EMPTY);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "flight_rune"), RUNE_FLIGHT);
+
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_empty"), RUNE_EMPTY);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_flight"), RUNE_FLIGHT);
 	}
 }
