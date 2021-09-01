@@ -29,5 +29,15 @@
 	"item.martian_alloys.rune_empty": "Empty Rune",
 	"item.martian_alloys.rune_sharpness": "Sharpness Rune",
 	"item.martian_alloys.rune_fire_aspect": "Fire Aspect Rune",
-	"item.martian_alloys.rune_efficiency": "Efficiency Rune"
+	"item.martian_alloys.rune_efficiency": "Efficiency Rune",
+	"item.martian_alloys.rune_aqua_affinity": "Aqua Affinity Rune",
+	"item.martian_alloys.rune_blast_protection": "Blast Protection Rune",
+	"item.martian_alloys.rune_depth_strider": "Depth Strider Rune",
+	"item.martian_alloys.rune_feather_falling": "Feather Falling Rune",
+	"item.martian_alloys.rune_frost_walker": "Frost Walker Rune",
+	"item.martian_alloys.rune_projectile_protection": "Projectile Protection Rune",
+	"item.martian_alloys.rune_protection": "Protection Rune",
+	"item.martian_alloys.rune_respiration": "Respiration Rune",
+	"item.martian_alloys.rune_soul_speed": "Soul Speed Rune",
+	"item.martian_alloys.rune_thorns": "Thorns Rune"
 }
