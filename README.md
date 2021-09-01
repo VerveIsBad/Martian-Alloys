@@ -29,6 +29,17 @@ There are only some runes for now, but there will eventually be one for every in
 - Efficiency
 - Fire Aspect
 - Sharpness
+- Efficiency
+- Aqua Affinity
+- Blast Protection
+- Depth Strider
+- Feather Falling
+- Frost Walker
+- Projectile Protection
+- Protection
+- Respiration
+- Soul Speed
+- Thorns
 
 > Currently all runes are not obtainable, this will change. I'm not sure how they will be obtained yet. Potentially they will be in chests or they can be crafted. Though they will be rare or expensive, depending on which obtaining method is used. They are quite powerful.
 
