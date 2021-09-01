@@ -35,3 +35,9 @@ There are only some runes for now, but there will eventually be one for every in
 ## Contributing
 
 Feel free to open a PR, edit whatever you want to your heart's content!
+
+## Unstable Builds
+
+Not every commit gets a version made for it, I.e, commit "Hello, World" doesn't have a version. It gets mixed into another version with some other commits.
+
+Though, via Github Actions, every commit gets tested to confirm whatever gets pushed, works. If you click `Actions`, then `Build`, then any given commit. Then click `Artifacts` and download the `Artifacts.zip` file, inside that, is the JAR file.
