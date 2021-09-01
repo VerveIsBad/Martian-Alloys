@@ -13,6 +13,10 @@ import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.registry.Registry;
+import paytonthemartian.martian_alloys.util.ModAxeItem;
+import paytonthemartian.martian_alloys.util.ModHoeItem;
+import paytonthemartian.martian_alloys.util.ModPickaxeItem;
+import paytonthemartian.martian_alloys.util.ToolMaterialMaker;
 import net.minecraft.util.Identifier;
 
 public class Alloy {

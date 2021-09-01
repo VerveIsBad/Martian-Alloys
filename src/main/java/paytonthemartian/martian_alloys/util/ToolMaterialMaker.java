@@ -1,4 +1,4 @@
-package paytonthemartian.martian_alloys;
+package paytonthemartian.martian_alloys.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
