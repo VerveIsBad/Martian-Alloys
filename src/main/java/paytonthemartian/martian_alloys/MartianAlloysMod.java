@@ -35,6 +35,11 @@ public class MartianAlloysMod implements ModInitializer {
 	public static final Item RUNE_INFINITY = new Rune(Enchantments.INFINITY);
 	public static final Item RUNE_FLAME = new Rune(Enchantments.FLAME);
 	public static final Item RUNE_CHANNELING = new Rune(Enchantments.CHANNELING);
+	public static final Item RUNE_LOYALTY = new Rune(Enchantments.LOYALTY);
+	public static final Item RUNE_MULTISHOT = new Rune(Enchantments.MULTISHOT);
+	public static final Item RUNE_POWER = new Rune(Enchantments.POWER);
+	public static final ITem RUNE_SWEEPING_EGDE = new Rune(Enchantments.SWEEPING_EDGE);
+
 
 
 	public static final Block FORGERY = new ForgeBlock(AbstractBlock.Settings.copy(Blocks.STONE));
@@ -67,6 +72,10 @@ public class MartianAlloysMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_infinity"), RUNE_INFINITY);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_flame"), RUNE_FLAME);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_channelling"), RUNE_CHANNELING);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_loyalty"), RUNE_LOYALTY);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_multishot"), RUNE_MULTISHOT);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_power"), RUNE_POWER);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_sweeping_edge"), RUNE_SWEEPING_EGDE);
 
 		Registry.register(Registry.BLOCK, new Identifier("martian_alloys", "forgery"), FORGERY);
 	}
