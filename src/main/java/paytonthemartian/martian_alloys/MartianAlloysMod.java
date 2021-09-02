@@ -30,8 +30,8 @@ public class MartianAlloysMod implements ModInitializer {
 	public static final Item RUNE_SOUL_SPEED = new Rune(Enchantments.SOUL_SPEED);
 	public static final Item RUNE_THORNS = new Rune(Enchantments.THORNS);
 	// Verve was here B)
-	public static final Item RUNE_KNOCKBACK = new Rune(Echantments.KNOCKBACK);
-	public static final Item RUNE_RIPTIDE = new Rune(Echantments.RIPTIDE);
+	public static final Item RUNE_KNOCKBACK = new Rune(Enchantments.KNOCKBACK);
+	public static final Item RUNE_RIPTIDE = new Rune(Enchantments.RIPTIDE);
 
 
 	public static final Block FORGERY = new ForgeBlock(AbstractBlock.Settings.copy(Blocks.STONE));
