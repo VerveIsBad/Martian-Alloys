@@ -34,7 +34,7 @@ public class MartianAlloysMod implements ModInitializer {
 	public static final Item RUNE_RIPTIDE = new Rune(Enchantments.RIPTIDE);
 	public static final Item RUNE_INFINITY = new Rune(Enchantments.INFINITY);
 	public static final Item RUNE_FLAME = new Rune(Enchantments.FLAME);
-	public static final Item RUNE_CHANNELLING = new Rune(Enchantments.CHANNELLING);
+	public static final Item RUNE_CHANNELING = new Rune(Enchantments.CHANNELING);
 
 
 	public static final Block FORGERY = new ForgeBlock(AbstractBlock.Settings.copy(Blocks.STONE));
@@ -66,7 +66,8 @@ public class MartianAlloysMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_riptide"), RUNE_RIPTIDE);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_infinity"), RUNE_INFINITY);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_flame"), RUNE_FLAME);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_channelling"), RUNE_CHANELLING);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_channelling"), RUNE_CHANNELING);
+
 		Registry.register(Registry.BLOCK, new Identifier("martian_alloys", "forgery"), FORGERY);
 	}
 }
