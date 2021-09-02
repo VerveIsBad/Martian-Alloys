@@ -1,10 +1,14 @@
 package paytonthemartian.martian_alloys;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import paytonthemartian.martian_alloys.forge.ForgeBlock;
 
 public class MartianAlloysMod implements ModInitializer {
 
@@ -26,6 +30,8 @@ public class MartianAlloysMod implements ModInitializer {
 	public static final Item RUNE_SOUL_SPEED = new Rune(Enchantments.SOUL_SPEED);
 	public static final Item RUNE_THORNS = new Rune(Enchantments.THORNS);
 
+	public static final Block FORGERY = new ForgeBlock(AbstractBlock.Settings.copy(Blocks.STONE));
+
 	@Override
 	public void onInitialize() {
 		Alloy.registerAlloy(AMETHYST_IRON_ALLOY);
@@ -36,14 +42,19 @@ public class MartianAlloysMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_fire_aspect"), RUNE_FIRE_ASPECT);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_efficiency"), RUNE_EFFICIENCY);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_aqua_affinity"), RUNE_AQUA_AFFINITY);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_blast_protection"), RUNE_BLAST_PROTECTION);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_blast_protection"),
+				RUNE_BLAST_PROTECTION);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_depth_strider"), RUNE_DEPTH_STRIDER);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_feather_falling"), RUNE_FEATHER_FALLING);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_feather_falling"),
+				RUNE_FEATHER_FALLING);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_frost_walker"), RUNE_FROST_WALKER);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_projectile_protection"), RUNE_PROJECTILE_PROTECTION);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_projectile_protection"),
+				RUNE_PROJECTILE_PROTECTION);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_protection"), RUNE_PROTECTION);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_respiration"), RUNE_RESPIRATION);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_soul_speed"), RUNE_SOUL_SPEED);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_thorns"), RUNE_THORNS);
+
+		Registry.register(Registry.BLOCK, new Identifier("martian_alloys", "forgery"), FORGERY);
 	}
 }

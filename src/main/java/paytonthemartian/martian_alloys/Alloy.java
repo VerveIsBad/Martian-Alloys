@@ -23,6 +23,7 @@ public class Alloy {
 	private ToolMaterial material;
 	public String name;
 	public Item alloyItem;
+	public Item bucketItem;
 
 	public JsonObject swordRecipe = null;
 	public JsonObject shovelRecipe = null;
@@ -30,96 +31,70 @@ public class Alloy {
 	public JsonObject axeRecipe = null;
 	public JsonObject hoeRecipe = null;
 
-	public Alloy(String name, int durability, float miningSpeedMultiplier, float attackDamage, int miningLevel, int enchantability, Item repairItem) {
+	public Alloy(String name, int durability, float miningSpeedMultiplier, float attackDamage, int miningLevel,
+			int enchantability, Item repairItem) {
 		this.alloyItem = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
-		if (repairItem == null) repairItem = alloyItem;
+		this.bucketItem = new Item(new Item.Settings().group(ItemGroup.MISC));
+		if (repairItem == null)
+			repairItem = alloyItem;
 
-		this.material = new ToolMaterialMaker(durability, miningSpeedMultiplier, attackDamage, miningLevel, enchantability, repairItem);
+		this.material = new ToolMaterialMaker(durability, miningSpeedMultiplier, attackDamage, miningLevel,
+				enchantability, repairItem);
 		this.name = name;
 	}
 
 	public static void registerAlloy(Alloy alloy) {
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name), alloy.alloyItem);
-		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_bucket"),
-						new Item(new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_bucket"), alloy.bucketItem);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_raw"),
-						new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
+				new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
 
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_sword"),
-						new SwordItem(alloy.material, 3, -2.4F, new Item.Settings().group(ItemGroup.COMBAT)));
+				new SwordItem(alloy.material, 3, -2.4F, new Item.Settings().group(ItemGroup.COMBAT)));
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_shovel"),
-						new ShovelItem(alloy.material, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS)));
+				new ShovelItem(alloy.material, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS)));
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_pickaxe"),
-						new ModPickaxeItem(alloy.material, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS)));
+				new ModPickaxeItem(alloy.material, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS)));
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_axe"),
-						new ModAxeItem(alloy.material, 5, -3.2F, new Item.Settings().group(ItemGroup.TOOLS)));
+				new ModAxeItem(alloy.material, 5, -3.2F, new Item.Settings().group(ItemGroup.TOOLS)));
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", alloy.name + "_hoe"),
-						new ModHoeItem(alloy.material, 1, -3.2F, new Item.Settings().group(ItemGroup.TOOLS)));
+				new ModHoeItem(alloy.material, 1, -3.2F, new Item.Settings().group(ItemGroup.TOOLS)));
 
 		if (FabricLoader.getInstance().isModLoaded("martian_alloys")) {
-			alloy.swordRecipe = createShapedRecipe(
-				Lists.newArrayList('#', '|'),
-				Lists.newArrayList(new Identifier("martian_alloys", alloy.name), new Identifier("minecraft", "stick")),
-				Lists.newArrayList("item", "item"),
-				Lists.newArrayList(
-					" # ",
-					" # ",
-					" | "
-				),
-				new Identifier("martian_alloys:" + alloy.name + "_sword")
-			);
+			alloy.swordRecipe = createShapedRecipe(Lists.newArrayList('#', '|'),
+					Lists.newArrayList(new Identifier("martian_alloys", alloy.name),
+							new Identifier("minecraft", "stick")),
+					Lists.newArrayList("item", "item"), Lists.newArrayList(" # ", " # ", " | "),
+					new Identifier("martian_alloys:" + alloy.name + "_sword"));
 
-			alloy.shovelRecipe = createShapedRecipe(
-				Lists.newArrayList('#', '|'),
-				Lists.newArrayList(new Identifier("martian_alloys", alloy.name), new Identifier("minecraft", "stick")),
-				Lists.newArrayList("item", "item"),
-				Lists.newArrayList(
-					" # ",
-					" | ",
-					" | "
-				),
-				new Identifier("martian_alloys:" + alloy.name + "_shovel")
-			);
+			alloy.shovelRecipe = createShapedRecipe(Lists.newArrayList('#', '|'),
+					Lists.newArrayList(new Identifier("martian_alloys", alloy.name),
+							new Identifier("minecraft", "stick")),
+					Lists.newArrayList("item", "item"), Lists.newArrayList(" # ", " | ", " | "),
+					new Identifier("martian_alloys:" + alloy.name + "_shovel"));
 
-			alloy.pickaxeRecipe = createShapedRecipe(
-				Lists.newArrayList('#', '|'),
-				Lists.newArrayList(new Identifier("martian_alloys", alloy.name), new Identifier("minecraft", "stick")),
-				Lists.newArrayList("item", "item"),
-				Lists.newArrayList(
-					"###",
-					" | ",
-					" | "
-				),
-				new Identifier("martian_alloys:" + alloy.name + "_pickaxe")
-			);
+			alloy.pickaxeRecipe = createShapedRecipe(Lists.newArrayList('#', '|'),
+					Lists.newArrayList(new Identifier("martian_alloys", alloy.name),
+							new Identifier("minecraft", "stick")),
+					Lists.newArrayList("item", "item"), Lists.newArrayList("###", " | ", " | "),
+					new Identifier("martian_alloys:" + alloy.name + "_pickaxe"));
 
-			alloy.axeRecipe = createShapedRecipe(
-				Lists.newArrayList('#', '|'),
-				Lists.newArrayList(new Identifier("martian_alloys", alloy.name), new Identifier("minecraft", "stick")),
-				Lists.newArrayList("item", "item"),
-				Lists.newArrayList(
-					" ##",
-					" |#",
-					" | "
-				),
-				new Identifier("martian_alloys:" + alloy.name + "_axe")
-			);
+			alloy.axeRecipe = createShapedRecipe(Lists.newArrayList('#', '|'),
+					Lists.newArrayList(new Identifier("martian_alloys", alloy.name),
+							new Identifier("minecraft", "stick")),
+					Lists.newArrayList("item", "item"), Lists.newArrayList(" ##", " |#", " | "),
+					new Identifier("martian_alloys:" + alloy.name + "_axe"));
 
-			alloy.hoeRecipe = createShapedRecipe(
-				Lists.newArrayList('#', '|'),
-				Lists.newArrayList(new Identifier("martian_alloys", alloy.name), new Identifier("minecraft", "stick")),
-				Lists.newArrayList("item", "item"),
-				Lists.newArrayList(
-					" ##",
-					" | ",
-					" | "
-				),
-				new Identifier("martian_alloys:" + alloy.name + "_hoe")
-			);
+			alloy.hoeRecipe = createShapedRecipe(Lists.newArrayList('#', '|'),
+					Lists.newArrayList(new Identifier("martian_alloys", alloy.name),
+							new Identifier("minecraft", "stick")),
+					Lists.newArrayList("item", "item"), Lists.newArrayList(" ##", " | ", " | "),
+					new Identifier("martian_alloys:" + alloy.name + "_hoe"));
 		}
 	}
 
-	public static JsonObject createShapedRecipe(ArrayList<Character> keys, ArrayList<Identifier> items, ArrayList<String> type, ArrayList<String> pattern, Identifier output) {
+	public static JsonObject createShapedRecipe(ArrayList<Character> keys, ArrayList<Identifier> items,
+			ArrayList<String> type, ArrayList<String> pattern, Identifier output) {
 		JsonObject json = new JsonObject();
 		json.addProperty("type", "minecraft:crafting_shaped");
 
@@ -149,12 +124,8 @@ public class Alloy {
 
 	public static String createItemModel(String id, String type) {
 		if ("generated".equals(type) || "handheld".equals(type)) {
-			return "{\n" +
-				"  \"parent\": \"item/" + type + "\",\n" +
-				"  \"textures\": {\n" +
-				"    \"layer0\": \"" + id + "\"\n" +
-				"  }\n" +
-				"}";
+			return "{\n" + "  \"parent\": \"item/" + type + "\",\n" + "  \"textures\": {\n" + "    \"layer0\": \"" + id
+					+ "\"\n" + "  }\n" + "}";
 		}
 
 		return "";
