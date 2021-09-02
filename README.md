@@ -3,10 +3,8 @@
 
 A Minecraft Fabric mod that adds some alloys.
 
-| Build Status | Branch |
-|--------------|--------|
-| ![master build status](https://github.com/PaytonTheMartian/Martian-Alloys/actions/workflows/build.yml/badge.svg) | master |
-| ![dev build status](https://github.com/PaytonTheMartian/Martian-Alloys/actions/workflows/build.yml/badge.svg?branch=dev) | dev |
+![master build status](https://github.com/Martian-Mods/Martian-Alloys/actions/workflows/build.yml/badge.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/martian-mods/martian-alloys/badge)](https://www.codefactor.io/repository/github/martian-mods/martian-alloys)
 
 ## Content
 
