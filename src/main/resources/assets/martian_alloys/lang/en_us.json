@@ -41,6 +41,9 @@
 	"item.martian_alloys.rune_soul_speed": "Soul Speed Rune",
 	"item.martian_alloys.rune_thorns": "Thorns Rune",
 	"item.martian_alloys.rune_knockback": "Knockback Rune",
-	"item.martian_alloys.rune_riptide": "Riptide Rune"
+	"item.martian_alloys.rune_riptide": "Riptide Rune",
+	"item.martian_alloys.rune_infinity": "Infinity Rune",
+	"item.martian_alloys.rune_flame": "Flame rune",
+	"item.martian_alloys.rune_chanelling": "Chanelling Rune"
 
 }
