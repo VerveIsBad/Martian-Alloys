@@ -32,6 +32,9 @@ public class MartianAlloysMod implements ModInitializer {
 	// Verve was here B)
 	public static final Item RUNE_KNOCKBACK = new Rune(Enchantments.KNOCKBACK);
 	public static final Item RUNE_RIPTIDE = new Rune(Enchantments.RIPTIDE);
+	public static final Item RUNE_INFINITY = new Rune(Enchantments.INFINITY);
+	public static final Item RUNE_FLAME = new Rune(Enchantments.FLAME);
+	public static final Item RUNE_CHANELLING = new Rune(Enchantments.CHANELLING);
 
 
 	public static final Block FORGERY = new ForgeBlock(AbstractBlock.Settings.copy(Blocks.STONE));
@@ -61,7 +64,9 @@ public class MartianAlloysMod implements ModInitializer {
 		// Verve was here :p
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_knockback"), RUNE_KNOCKBACK);
 		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_riptide"), RUNE_RIPTIDE);
-
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_infinity"), RUNE_INFINITY);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_flame"), RUNE_FLAME);
+		Registry.register(Registry.ITEM, new Identifier("martian_alloys", "rune_chanelling"), RUNE_CHANELLING);
 		Registry.register(Registry.BLOCK, new Identifier("martian_alloys", "forgery"), FORGERY);
 	}
 }
